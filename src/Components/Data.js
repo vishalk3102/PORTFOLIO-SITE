@@ -20,14 +20,12 @@ export const aboutNavData = [
   {
     id: 1,
     name: "education",
+    handleFunction: "educationHandleClick",
   },
   {
     id: 2,
-    name: "certifications",
-  },
-  {
-    id: 3,
     name: "Position of responsibility",
+    handleFunction: "responsibilityHandleClick",
   },
 ];
 export const educationData = [
@@ -39,12 +37,20 @@ export const educationData = [
     grade: "9.4 / 10",
     time: "sept 2020 -july 2024",
   },
+  // {
+  //   id: 2,
+  //   organization: "Graphic Era University",
+  //   Course: "Bachelor's of Technology",
+  //   major: "Computer Science and Engineering",
+  //   grade: "9.4 / 10",
+  //   time: "sept 2020 -july 2024",
+  // },
+];
+export const ResponsibilityData = [
   {
-    id: 2,
-    organization: "Graphic Era University",
-    Course: "Bachelor's of Technology",
-    major: "Computer Science and Engineering",
-    grade: "9.4 / 10",
+    id: 1,
+    organization: "IEEE Student Branch",
+    position: "Web-Master",
     time: "sept 2020 -july 2024",
   },
 ];

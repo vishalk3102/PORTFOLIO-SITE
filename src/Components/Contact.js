@@ -6,6 +6,7 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { FiSend, FiMail, FiPhone } from "react-icons/fi";
+// import firebaseDB from "../firebase";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,6 +28,17 @@ const Contact = () => {
     event.preventDefault();
     const { name, email, message } = formData;
 
+    // if (!name && !email && !message) {
+    //   alert("Please fill the Details");
+    // } else {
+    //   firebaseDB.child("contacts").push(formData);
+    //   setFormData({
+    //     name: "",
+    //     email: "",
+    //     message: "",
+    //   });
+    // }
+
     // db.collections("usermessage")
     //   .add({
     //     name,
@@ -42,7 +54,7 @@ const Contact = () => {
 
     if (name && email && message) {
       const res = await fetch(
-        "https://vishalk3102-cdcbc-default-rtdb.firebaseio.com/userMessage.json",
+        "https://vishalk3102-cdcbc-default-rtdb.firebaseio.com/usermessage.json",
         {
           method: "POST",
           headers: {
