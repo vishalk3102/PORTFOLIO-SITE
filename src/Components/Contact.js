@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import Header from "./Header";
 import {
   AiOutlineInstagram,
@@ -6,7 +7,7 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { FiSend, FiMail, FiPhone } from "react-icons/fi";
-// import firebaseDB from "../firebase";
+const dotenv = require("dotenv").config;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const formRef = useRef();
 
   const handleChange = (event) => {
     let name, value;
@@ -24,65 +26,24 @@ const Contact = () => {
       [name]: value,
     });
   };
-  const submitForm = async (event) => {
-    event.preventDefault();
-    const { name, email, message } = formData;
+  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const templateId = process.env.REACT_APP_TEMPLATE_ID;
+  const publicId = process.env.REACT_APP_TEMPLATE_ID;
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    // if (!name && !email && !message) {
-    //   alert("Please fill the Details");
-    // } else {
-    //   firebaseDB.child("contacts").push(formData);
-    //   setFormData({
-    //     name: "",
-    //     email: "",
-    //     message: "",
-    //   });
-    // }
-
-    // db.collections("usermessage")
-    //   .add({
-    //     name,
-    //     email,
-    //     message,
-    //   })
-    //   .then(() => {
-    //     alert("Message Sent Successfully");
-    //   })
-    //   .catch((error) => {
-    //     alert(error.message);
-    //   });
-
-    if (name && email && message) {
-      const res = await fetch(
-        "https://vishalk3102-cdcbc-default-rtdb.firebaseio.com/usermessage.json",
-        {
-          method: "POST",
-          headers: {
-            "content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            message,
-          }),
-        }
-      );
-
-      if (res) {
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-        alert("Message Sent Successfully");
-      } else {
-        alert("Please fill the Details");
+    emailjs.sendForm(serviceId, templateId, formRef.current, publicId).then(
+      (result) => {
+        console.log(result.text);
+        alert("Message sent succesfully");
+      },
+      (error) => {
+        console.log(error.text);
+        alert("Message not sent succesfully");
       }
-    } else {
-      alert("Please fill the Details");
-    }
+    );
+    e.target.reset();
   };
-
   return (
     <>
       <div id="contact" className="text-white mt-20 h-full">
@@ -141,45 +102,48 @@ const Contact = () => {
             </div>
           </div>
           <div className="m-5 p-3">
-            <form method="POST">
+            <form method="POST" ref={formRef}>
               <div className="flex flex-col">
-                <span class="Capitalize ">Full Name</span>
+                <span className="Capitalize ">Full Name</span>
                 <input
-                  class="w-full md:w-[75%] bg-white-300 text-gray-900 mt-2 p-3 rounded"
+                  className="w-full md:w-[75%] bg-white-300 text-gray-900 mt-2 p-3 rounded"
                   type="text"
                   placeholder=""
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
+                  required
                 />
               </div>
-              <div class="mt-8 flex  flex-col">
-                <span class="Capitalize">Email</span>
+              <div className="mt-8 flex  flex-col">
+                <span className="Capitalize">Email</span>
                 <input
-                  class="w-full md:w-[75%] bg-white-300 text-gray-900 mt-2 p-3 rounded"
+                  className="w-full md:w-[75%] bg-white-300 text-gray-900 mt-2 p-3 rounded"
                   type="text"
                   placeholder=""
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  required
                 />
               </div>
-              <div class="mt-8 flex  flex-col">
-                <span class="Capitalize">Message</span>
-                <input
-                  class="w-full md:w-[75%] h-32 bg-white-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              <div className="mt-8 flex  flex-col">
+                <span className="Capitalize">Message</span>
+                <textarea
+                  className="w-full md:w-[75%] h-32 bg-white-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                   type="text"
                   placeholder=""
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                />
+                  rows="7"
+                ></textarea>
               </div>
-              <div class="mt-8">
+              <div className="mt-8">
                 <button
                   type="submit"
                   className=" text-[#fff] w-[30%] flex justify-around items-center m-3 ml-0 p-3 border-solid border-2  border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-105"
-                  onSubmit={submitForm}
+                  onSubmit={sendEmail}
                 >
                   Submit
                   <FiSend size={20} />
