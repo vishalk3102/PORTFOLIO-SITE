@@ -12,7 +12,7 @@ const SocialIcon = () => {
   return (
     <>
       <div className="flex flex-col p-3">
-        <span className="p-2  flex justify-center items-center w-[10%] hover:scale-150">
+        <span className="p-2  flex justify-center items-center hover:scale-150">
           <a
             href="https://www.instagram.com/vishalk3102/"
             target="_blank"
@@ -21,7 +21,7 @@ const SocialIcon = () => {
             <AiOutlineInstagram size={26} />
           </a>
         </span>
-        <span className="p-2  flex justify-center items-center w-[10%] hover:scale-150">
+        <span className="p-2  flex justify-center items-center hover:scale-150">
           <a
             href="https://github.com/vishalk3102"
             target="_blank"
@@ -30,7 +30,7 @@ const SocialIcon = () => {
             <AiOutlineGithub size={26} />
           </a>
         </span>
-        <span className="p-2  flex justify-center items-center w-[10%] hover:scale-150">
+        <span className="p-2  flex justify-center items-center hover:scale-150">
           <a
             href="https://www.linkedin.com/in/vishalk3102/"
             target="_blank"
@@ -39,7 +39,7 @@ const SocialIcon = () => {
             <AiOutlineLinkedin size={26} />
           </a>
         </span>
-        <span className="p-2  flex justify-center items-center w-[10%] hover:scale-150">
+        <span className="p-2  flex justify-center items-center hover:scale-150">
           <a
             href="https://www.linkedin.com/in/vishalk3102/"
             target="_blank"
@@ -48,7 +48,7 @@ const SocialIcon = () => {
             <SiGmail size={26} />
           </a>
         </span>
-        <span className="p-1  pt-8  mt-4 flex  flex-col justify-center items-center w-[10%] h-[30%] hover:cursor-pointer">
+        <span className="p-1  pt-8  mt-4 flex  flex-col justify-center items-center h-[30%] hover:cursor-pointer">
           <Link
             activeClass="active"
             to="about"

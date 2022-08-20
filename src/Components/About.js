@@ -59,7 +59,7 @@ const About = () => {
           className={
             !dropDown
               ? "hidden"
-              : " max-w-[1100px] w-full mx-auto flex  justify-center  items-center "
+              : " max-w-[1000px] w-full mx-auto grid grid-cols-1"
           }
         >
           {active === 1 ? <EducationDropdown /> : <div></div>}

@@ -6,6 +6,9 @@ import resume from "../Assets/Vishal_resume.pdf";
 import { Link } from "react-scroll";
 
 const Hero = () => {
+  const handleClick = (e) => {
+    console.log("clicked");
+  };
   return (
     <>
       <div id="hero" className="text-white w-full grid md:grid-cols-2">
@@ -28,16 +31,15 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex justify-center items-center my-5">
-            <div className="text-[#fff] w-[20%] m-3 p-3 border-solid border-2 border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-110">
-              <a
-                href={resume}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:cursor-pointer hover:scale-110s"
-              >
+            <div
+              className="text-[#fff] w-[20%] m-3 p-3 border-solid border-2 border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-110"
+              onClick={() => handleClick}
+            >
+              <a href={resume} target="_blank" rel="noreferrer" download>
                 Resume
               </a>
             </div>
+
             <div className="text-[#fff] w-[20%] m-3 p-3 border-solid border-2 rounded border-[#009c86] hover:cursor-pointer hover:scale-105">
               <Link
                 activeClass="active"
@@ -52,7 +54,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className=" hidden md:block md:absolute md:left-0 md:w-[50%]">
+          <div className=" hidden md:flex md:absolute md:left-0 md:w-[10%]">
             <SocialIcon />
           </div>
         </div>
