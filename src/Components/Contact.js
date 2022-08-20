@@ -96,7 +96,10 @@ const Contact = () => {
               Connect with me via Call or Email{" "}
             </p>
             <div className="p-3 m-3 flex justify-start items-center hover:cursor-pointer  hover:text-[#009c86]">
-              <a href="#" className="p-2 mr-2 hover:cursor-pointer">
+              <a
+                href="mailto:karande.vishal3102@gmail.com"
+                className="p-2 mr-2 hover:cursor-pointer"
+              >
                 <FiMail size={24} />
               </a>
               <span>Karande.vishal3102@gmail.com</span>

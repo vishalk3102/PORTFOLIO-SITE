@@ -41,7 +41,7 @@ const SocialIcon = () => {
         </span>
         <span className="p-2  flex justify-center items-center hover:scale-150">
           <a
-            href="https://www.linkedin.com/in/vishalk3102/"
+            href="mailto:karande.vishal3102@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
