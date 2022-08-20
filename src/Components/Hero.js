@@ -54,7 +54,7 @@ const Hero = () => {
               </Link>
             </div>
           </div>
-          <div className=" hidden md:flex md:absolute md:left-0 md:w-[10%]">
+          <div className=" md:flex md:absolute md:left-0 md:w-[10%]">
             <SocialIcon />
           </div>
         </div>

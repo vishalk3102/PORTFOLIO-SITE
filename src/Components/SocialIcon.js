@@ -11,7 +11,7 @@ import { Link } from "react-scroll";
 const SocialIcon = () => {
   return (
     <>
-      <div className="flex flex-col p-3">
+      <div className="flex md:flex-col justify-evenly p-3">
         <span className="p-2  flex justify-center items-center hover:scale-150">
           <a
             href="https://www.instagram.com/vishalk3102/"
@@ -48,7 +48,7 @@ const SocialIcon = () => {
             <SiGmail size={26} />
           </a>
         </span>
-        <span className="p-1  pt-8  mt-4 flex  flex-col justify-center items-center h-[30%] hover:cursor-pointer">
+        <span className="p-1  md:pt-8  md:mt-4 flex  md:flex-col justify-center items-center h-[30%] hover:cursor-pointer">
           <Link
             activeClass="active"
             to="about"
@@ -58,7 +58,7 @@ const SocialIcon = () => {
             duration={500}
             delay={500}
           >
-            <p className="text-white text-[10px] rotate-90 mb-8">
+            <p className="text-white text-[10px] md:rotate-90 md:mb-8">
               Scroll Down{" "}
             </p>
           </Link>
@@ -71,7 +71,7 @@ const SocialIcon = () => {
             duration={500}
             delay={500}
           >
-            <BsArrowDown size={40} />
+            <BsArrowDown size={40} className="mx-1 scale-50 md:scale-100" />
           </Link>
         </span>
       </div>
