@@ -7,7 +7,6 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { FiSend, FiMail, FiPhone } from "react-icons/fi";
-const dotenv = require("dotenv").config;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,22 +25,26 @@ const Contact = () => {
       [name]: value,
     });
   };
-  const serviceId = process.env.REACT_APP_SERVICE_ID;
-  const templateId = process.env.REACT_APP_TEMPLATE_ID;
-  const publicId = process.env.REACT_APP_TEMPLATE_ID;
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(serviceId, templateId, formRef.current, publicId).then(
-      (result) => {
-        console.log(result.text);
-        alert("Message sent succesfully");
-      },
-      (error) => {
-        console.log(error.text);
-        alert("Message not sent succesfully");
-      }
-    );
+    emailjs
+      .sendForm(
+        "service_i3oopla",
+        "template_ezn9k37",
+        formRef.current,
+        "HNFxVhwn1e0rIL5Hs"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent succesfully");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Message not sent succesfully");
+        }
+      );
     e.target.reset();
   };
   return (
@@ -102,7 +105,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="m-5 p-3">
-            <form method="POST" ref={formRef}>
+            <form onSubmit={sendEmail} ref={formRef}>
               <div className="flex flex-col">
                 <span className="Capitalize ">Full Name</span>
                 <input
@@ -143,7 +146,6 @@ const Contact = () => {
                 <button
                   type="submit"
                   className=" text-[#fff] w-[30%] flex justify-around items-center m-3 ml-0 p-3 border-solid border-2  border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-105"
-                  onSubmit={sendEmail}
                 >
                   Submit
                   <FiSend size={20} />
