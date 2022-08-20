@@ -16,7 +16,7 @@ const Header = (props) => {
         <span className="text-white uppercase font-bold text-center p-2 text-2xl">
           {props.index === 1 ? (
             <motion.div
-              initial={{ opacity: 0, x: "100px" }}
+              initial={{ opacity: 0, x: "0px" }}
               whileInView={{ opacity: 1, x: "0px" }}
               transition={{ ease: "easeOut", duration: 2 }}
             >
@@ -24,7 +24,7 @@ const Header = (props) => {
             </motion.div>
           ) : (
             <motion.div
-              initial={{ x: "-100px", opacity: 0 }}
+              initial={{ x: "0px", opacity: 0 }}
               whileInView={{ x: "0px", opacity: 1 }}
               transition={{ ease: "easeOut", duration: 2 }}
             >
