@@ -1,13 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const menuRef = useRef();
+  useEffect(() => {
+    let menuHandler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setNav(false);
+      }
+    };
+    document.addEventListener("mousedown", menuHandler);
+    return () => {
+      document.removeEventListener("mousedown", menuHandler);
+    };
+  });
 
   const handleClick = () => {
     setNav(!nav);
+  };
+  const handleSelectClick = () => {
+    setNav(false);
   };
   return (
     <>
@@ -97,6 +112,7 @@ const Navbar = () => {
           {/* MOBILE DEVICE-MENU  CODE  */}
 
           <div
+            ref={menuRef}
             id="navmobile"
             className={
               !nav
@@ -117,6 +133,7 @@ const Navbar = () => {
                   offset={0}
                   duration={500}
                   delay={500}
+                  onClick={handleSelectClick}
                 >
                   Home
                 </Link>
@@ -130,6 +147,7 @@ const Navbar = () => {
                   offset={0}
                   duration={500}
                   delay={500}
+                  onClick={handleSelectClick}
                 >
                   About
                 </Link>
@@ -143,6 +161,7 @@ const Navbar = () => {
                   offset={0}
                   duration={500}
                   delay={500}
+                  onClick={handleSelectClick}
                 >
                   Skills
                 </Link>
@@ -156,6 +175,7 @@ const Navbar = () => {
                   offset={0}
                   duration={500}
                   delay={500}
+                  onClick={handleSelectClick}
                 >
                   Projects
                 </Link>
@@ -169,6 +189,7 @@ const Navbar = () => {
                   offset={0}
                   duration={500}
                   delay={500}
+                  onClick={handleSelectClick}
                 >
                   Contact
                 </Link>
