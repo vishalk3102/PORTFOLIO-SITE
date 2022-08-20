@@ -7,6 +7,8 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { FiSend, FiMail, FiPhone } from "react-icons/fi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -38,11 +40,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Message sent succesfully");
+          toast.success(
+            "Thanks for sending the message,I will contact you soon ."
+          );
         },
         (error) => {
           console.log(error.text);
-          alert("Message not sent succesfully");
+          toast.error("Message not sent !!");
         }
       );
     e.target.reset();
@@ -152,6 +156,7 @@ const Contact = () => {
                 </button>
               </div>
             </form>
+            <ToastContainer position="top-center" />
           </div>
         </div>
       </div>
