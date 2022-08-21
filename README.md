@@ -37,18 +37,34 @@ Start the server
   npm start
 ```
 
+<<<<<<< HEAD
+
 Install all the peer dependencies
 
 ```bash
   npm install <library name> --legacy-peer-deps
 ```
 
+=======
+Install all the peer dependencies
+
+```bash
+  npm install <library name> --legacy-peer-deps
+```
+
+> > > > > > > 691d34ebbab467daf25c3235d3bcb46052049449
+
 ## Technologies
 
 The following technologies were used in the developement of the application
 
+<<<<<<< HEAD
+
+- React
+- # Tailwind
 - React
 - Tailwind
+  > > > > > > > 691d34ebbab467daf25c3235d3bcb46052049449
 
 ## License
 
