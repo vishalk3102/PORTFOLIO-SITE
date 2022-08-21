@@ -27,6 +27,7 @@ const Contact = () => {
       [name]: value,
     });
   };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -34,7 +35,7 @@ const Contact = () => {
       .sendForm(
         "service_i3oopla",
         "template_ezn9k37",
-        formRef.current,
+        e.target,
         "HNFxVhwn1e0rIL5Hs"
       )
       .then(
@@ -49,8 +50,13 @@ const Contact = () => {
           toast.error("Message not sent !!");
         }
       );
-    e.target.reset();
+    this.setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
+
   return (
     <>
       <div id="contact" className="text-white mt-20 h-full">
