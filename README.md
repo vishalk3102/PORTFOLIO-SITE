@@ -37,8 +37,8 @@ Start the server
 
 The following technologies were used in the developement of the application
 
-  React
-  Tailwind
+ - React
+ - Tailwind
 
 ## License
 
