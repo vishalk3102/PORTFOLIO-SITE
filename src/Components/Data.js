@@ -147,7 +147,7 @@ export const sliderData = [
     imgSrc: sliderImg4,
     title: "Portfolio",
     urlCode: "https://github.com/vishalk3102/PORTFOLIO-SITE",
-    urlLive: "https://enigma-dev.herokuapp.com",
+    urlLive: "https://vishalkumar31.netlify.app/",
     description:
       "This is my personal portfolio website that shows all the details regarding me.",
   },
