@@ -14,7 +14,7 @@ const SocialIcon = () => {
       <div className="flex md:flex-col justify-evenly p-3">
         <span className="p-2  flex justify-center items-center hover:scale-150">
           <a
-            href="https://www.instagram.com/vishalk3102/"
+            href="https://www.instagram.com/vishal_k_31/"
             target="_blank"
             rel="noreferrer"
           >

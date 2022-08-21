@@ -37,7 +37,7 @@ const Contact = () => {
       .sendForm(
         "service_i3oopla",
         "template_ezn9k37",
-        e.target,
+        formRef.current,
         "HNFxVhwn1e0rIL5Hs"
       )
       .then(
@@ -89,7 +89,7 @@ const Contact = () => {
             <div className="flex flex-row items-center justify-start p-3 m-3">
               <span className="p-2  flex justify-center items-center w-[10%] hover:cursor-pointer hover:scale-150 mr-8">
                 <a
-                  href="https://www.instagram.com/vishalk3102/"
+                  href="https://www.instagram.com/vishal_k_31/"
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-row items-center md:justify-around  p-2 md:p-3 md:m-3 col-span-1 md:col-span-1">
             <span className="flex justify-center items-center w-[10%] hover:cursor-pointer hover:scale-125 mx-3    md:mr-8">
               <a
-                href="https://www.instagram.com/vishalk3102/"
+                href="https://www.instagram.com/vishal_k_31/"
                 target="_blank"
                 rel="noreferrer"
               >
