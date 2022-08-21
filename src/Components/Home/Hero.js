@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
           <div className="flex justify-center items-center my-5">
             <div
-              className="text-[#fff] w-[20%] m-3 p-3 border-solid border-2 border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-110"
+              className="text-[#fff] w-[150px] m-3 p-3 border-solid border-2 border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-110"
               onClick={() => handleClick}
             >
               <a href={resume} target="_blank" rel="noreferrer" download>
@@ -40,7 +40,7 @@ const Hero = () => {
               </a>
             </div>
 
-            <div className="text-[#fff] w-[20%] m-3 p-3 border-solid border-2 rounded border-[#009c86] hover:cursor-pointer hover:scale-105">
+            <div className="text-[#fff] w-[150px] m-3 p-3 border-solid border-2 rounded border-[#009c86] hover:cursor-pointer hover:scale-105">
               <Link
                 activeClass="active"
                 to="contact"
