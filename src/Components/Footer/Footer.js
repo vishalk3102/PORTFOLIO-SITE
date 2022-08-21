@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <div id="footer" className="text-white w-full h-[4rem] ">
         <div className="max-w-[1200px] mx-auto grid grid-cols-4 md:grid-cols-3">
-          <div className="flex flex-row items-center md:justify-around  p-2 md:p-3 md:m-3">
+          <div className="flex flex-row items-center md:justify-around  p-2 md:p-3 md:m-3 col-span-1 md:col-span-1">
             <span className="flex justify-center items-center w-[10%] hover:cursor-pointer hover:scale-125 mx-3    md:mr-8">
               <a
                 href="https://www.instagram.com/vishalk3102/"
@@ -41,7 +41,7 @@ const Footer = () => {
               </a>
             </span>
           </div>
-          <div className="flex  justify-center items-center col-span-2 md:col-span-1">
+          <div className="flex  justify-center items-center col-span-3 md:col-span-1">
             <span className="mr-2 scale-75 md:scale-100">
               <AiOutlineCopyright size={24} />
             </span>
@@ -51,7 +51,7 @@ const Footer = () => {
               All Right Reserved | Vishal Kumar | 2022
             </p>
           </div>
-          <div className="flex  justify-center items-center text-[0.7rem] md:text-[0.8rem] hover:cursor-pointer">
+          <div className="flex  justify-center items-center text-[0.7rem] md:text-[0.8rem] hover:cursor-pointer  col-span-4 md:col-span-1">
             <Link
               activeClass="active"
               to="navbar"
