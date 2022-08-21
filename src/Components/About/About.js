@@ -33,13 +33,13 @@ const About = () => {
             return (
               <>
                 <div
+                  key={items.id}
                   className={`flex justify-center items-center p-3 m-5 ease duration-500 capitalize cursor-pointer ${
                     dropDown && active === items.id
                       ? "text-[#009c86]"
                       : "text-[#fff"
                   } `}
                   onClick={() => handleClick(items.id)}
-                  key={items.id}
                 >
                   {items.name}
                   <span className="mx-4">
