@@ -38,16 +38,26 @@ const Slider = ({ items }) => {
             })}
           </div>
           <div className=" w-[100px] p-2 m-1 md:m-2 border-solid border-2 flex justify- items items-center border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-105">
-            <a href={items.urlLink} className="mr-5 p-1/2">
+            <a
+              href={items.urlLink}
+              target="_blank"
+              rel="noreferrer"
+              className="mr-1 p-1/2 w-full flex justify-around items-center"
+            >
               Live
+              <BsArrowRightShort size={24} className="scale-125" />
             </a>
-            <BsArrowRightShort size={24} className="scale-125" />
           </div>
           <div className=" w-[100px] p-2 m-1 md:m-2 font-medium border-solid border-2  border-[#009c86] rounded flex justify-start items-center hover:cursor-pointer hover:scale-105">
-            <a href={items.urlCode} className="mr-4 p-1/2">
+            <a
+              href={items.urlCode}
+              target="_blank"
+              rel="noreferrer"
+              className="mr-1 p-1/2 w-full flex justify-around items-center"
+            >
               Code
+              <BsArrowRightShort size={24} className="scale-125" />
             </a>
-            <BsArrowRightShort size={24} className="scale-125" />
           </div>
         </div>
       </div>

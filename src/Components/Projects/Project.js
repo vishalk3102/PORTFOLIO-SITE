@@ -5,6 +5,9 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 import Slider from "./Slider";
 import "swiper/css";
 import { sliderData } from "../Data";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 const Project = () => {
   return (
@@ -18,9 +21,9 @@ const Project = () => {
             slidesPerView={1}
             navigation={true}
             pagination={{ clickable: true }}
-            speed={5000}
+            speed={3000}
             loop={true}
-            autoplay={{ delay: 2000 }}
+            autoplay={{ delay: 7000 }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >

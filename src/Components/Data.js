@@ -120,7 +120,7 @@ export const sliderData = [
     imgSrc: sliderImg1,
     title: "Global School Website",
     urlCode: "https://github.com/vishalk3102/globalschoolreactwebsite",
-    urlLive: "https://globalschoolreact.herokuapp.com/",
+    urlLive: "https://globalschoolreact.herokuapp.com",
     description: "A website to show all realted information regarding school.",
   },
   {
@@ -128,7 +128,7 @@ export const sliderData = [
     imgSrc: sliderImg2,
     title: "uPay",
     urlCode: "https://github.com/vishalk3102/uPay",
-    urlLive: "https://upay-react.herokuapp.com/",
+    urlLive: "https://upay-react.herokuapp.com",
     description:
       "Website for Payment that features all the essential details for payment sites",
   },
@@ -138,7 +138,7 @@ export const sliderData = [
     imgSrc: sliderImg3,
     title: "EnigmaDev",
     urlCode: "https://github.com/vishalk3102/Enigma-Dev",
-    urlLive: "https://enigma-dev.herokuapp.com/",
+    urlLive: "https://enigma-dev.herokuapp.com",
     description:
       "A website that manage different business and show all the relevant information related to it.",
   },
@@ -146,8 +146,8 @@ export const sliderData = [
     id: 4,
     imgSrc: sliderImg4,
     title: "Portfolio",
-    urlCode: "https://github.com/vishalk3102/Enigma-Dev",
-    urlLive: "https://enigma-dev.herokuapp.com/",
+    urlCode: "https://github.com/vishalk3102/PORTFOLIO-SITE",
+    urlLive: "https://enigma-dev.herokuapp.com",
     description:
       "This is my personal portfolio website that shows all the details regarding me.",
   },
