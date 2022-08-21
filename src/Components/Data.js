@@ -15,6 +15,7 @@ import { AiOutlineGithub } from "react-icons/ai";
 import sliderImg1 from "../Assets/sliderImg1.jpeg";
 import sliderImg2 from "../Assets/sliderImg2.jpeg";
 import sliderImg3 from "../Assets/sliderImg3.jpeg";
+import sliderImg4 from "../Assets/sliderImg4.png";
 
 export const aboutNavData = [
   {
@@ -37,21 +38,21 @@ export const educationData = [
     grade: "9.4 / 10",
     time: "sept 2020 -july 2024",
   },
-  // {
-  //   id: 2,
-  //   organization: "Graphic Era University",
-  //   Course: "Bachelor's of Technology",
-  //   major: "Computer Science and Engineering",
-  //   grade: "9.4 / 10",
-  //   time: "sept 2020 -july 2024",
-  // },
+  {
+    id: 2,
+    organization: "Kendriya Vidyalaya RHE pune",
+    Course: "12th",
+    major: "Science",
+    grade: "90.8%",
+    time: "april 2018 -june 2019",
+  },
 ];
 export const ResponsibilityData = [
   {
     id: 1,
     organization: "IEEE Student Branch",
     position: "Web-Master",
-    time: "sept 2020 -july 2024",
+    time: "april 2022 -present",
   },
 ];
 export const skillData = [
@@ -132,6 +133,15 @@ export const sliderData = [
     urlLive: "https://enigma-dev.herokuapp.com/",
     description:
       "A website that manage different business and show all the relevant information related to it.",
+  },
+  {
+    id: 4,
+    imgSrc: sliderImg4,
+    title: "Portfolio",
+    urlCode: "https://github.com/vishalk3102/Enigma-Dev",
+    urlLive: "https://enigma-dev.herokuapp.com/",
+    description:
+      "This is my personal portfolio website that shows all the details regarding me.",
   },
 ];
 

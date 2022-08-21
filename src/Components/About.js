@@ -21,12 +21,11 @@ const About = () => {
             "Stop stopping Yourself"
           </p>
           <p className="flex justify-center items-center mx-auto p-2 my-3">
-            Hi, I am a Computer Science Undergraduate student at Graphic Era
-            deemed to be university, Dehradun. I am a budding Software Engineer,
-            who is aiming to learn everything about different technologies. I am
-            currently learning C, C++, Web development and aspiring to become a
-            Full-stack web developer. I'm a quick learner and want to learn,
-            explore and polish my skills as much as I can.
+            I am Vishal Kumar, a Computer Science Undergraduate student at
+            Graphic Era deemed to be university, Dehradun. <br /> I am a Full
+            stack developer and a budding software engineer. I'm a quick learner
+            and want to learn, explore and <br /> polish my skills as much as
+            possible.
           </p>
         </div>
         <div className="flex md:flex-row flex-col justify-evenly items-center my-3 mx-auto max-w-[1100px] w-full ">
