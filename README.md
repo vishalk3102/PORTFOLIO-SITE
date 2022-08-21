@@ -30,16 +30,14 @@ Start the server
 
 npm start
 
-The following image demonstrates the application functionality:
 
-![Demo of PORTFOLIO-SITE!](https://drive.google.com/file/d/1qhqt05dne4mzHuwrvePbd6s_fesCfBno/view?usp=sharing)
 
 ## Technologies
 
 The following technologies were used in the developement of the application
 
-React
-Tailwind
+### React
+### Tailwind
 
 ## License
 
