@@ -18,6 +18,7 @@ const Contact = () => {
   });
   const formRef = useRef();
 
+  // function to handle if there is any change in contact form
   const handleChange = (event) => {
     let name, value;
     name = event.target.name;
@@ -28,6 +29,7 @@ const Contact = () => {
     });
   };
 
+  // function to send data on submiting the form
   const sendEmail = (e) => {
     e.preventDefault();
 
