@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
-import Project from "./Components/Project";
-import Skills from "./Components/Skills";
-import Loader from "./Components/Loader";
+import About from "./Components/About/About";
+import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
+import Hero from "./Components/Home/Hero";
+import Navbar from "./Components/Home/Navbar";
+import Project from "./Components/Projects/Project";
+import Skills from "./Components/Skills/Skills";
+import Loader from "./Components/Home/Loader";
 
 const App = () => {
   const [loading, setLoading] = useState(true);

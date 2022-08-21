@@ -1,5 +1,5 @@
 import React from "react";
-import { ResponsibilityData } from "./Data";
+import { ResponsibilityData } from "../Data";
 
 const PositionDropdown = () => {
   return (

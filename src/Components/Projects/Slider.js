@@ -1,6 +1,6 @@
 import React from "react";
 import { BsArrowRightShort } from "react-icons/bs";
-import { techIconData } from "./Data";
+import { techIconData } from "../Data";
 
 const Slider = ({ items }) => {
   return (

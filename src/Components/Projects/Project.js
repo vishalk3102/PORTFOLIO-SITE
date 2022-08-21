@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
+import Header from "../Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import Slider from "./Slider";
 import "swiper/css";
-import { sliderData } from "./Data";
+import { sliderData } from "../Data";
 
 const Project = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header";
-import { skillData } from "./Data";
+import Header from "../Header";
+import { skillData } from "../Data";
 
 const Skills = () => {
   return (

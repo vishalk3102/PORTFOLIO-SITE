@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "./Header";
+import Header from "../Header";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import { aboutNavData } from "./Data";
-import EducationDropdown from "./EducationDropdown";
-import PositionDropDown from "./PositonDropdown";
+import { aboutNavData } from "../Data";
+import EducationDropdown from "../About/EducationDropdown";
+import PositionDropDown from "../About/PositonDropdown";
 
 const About = () => {
   const [dropDown, setDropDown] = useState(false);

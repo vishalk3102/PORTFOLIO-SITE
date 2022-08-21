@@ -1,8 +1,8 @@
 import React from "react";
 import ReactTyped from "react-typed";
-import img2 from "../Assets/img2.png";
-import SocialIcon from "./SocialIcon";
-import resume from "../Assets/Vishal_resume.pdf";
+import img2 from "../../Assets/img2.png";
+import SocialIcon from "../Home/SocialIcon";
+import resume from "../../Assets/Vishal_resume.pdf";
 import { Link } from "react-scroll";
 
 const Hero = () => {

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Header from "./Header";
+import Header from "../Header";
 import {
   AiOutlineInstagram,
   AiOutlineGithub,
