@@ -18,7 +18,7 @@ const PositionDropdown = () => {
                     {items.organization}
                   </p>
                   <p className="p-1">
-                    <span className="mr-2">Course :</span>
+                    <span className="mr-2">Position :</span>
                     {items.position}
                   </p>
                 </div>
