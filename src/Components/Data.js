@@ -128,7 +128,7 @@ export const sliderData = [
     imgSrc: sliderImg2,
     title: "uPay",
     urlCode: "https://github.com/vishalk3102/uPay",
-    urlLive: "https://upay-react.herokuapp.com",
+    urlLive: "https://upay-react.herokuapp.com/",
     description:
       "Website for Payment that features all the essential details for payment sites",
   },

@@ -71,14 +71,14 @@ const Contact = () => {
               <br />
               Connect with me via Call or Email{" "}
             </p>
-            <div className="p-3 m-3 flex justify-start items-center hover:cursor-pointer  hover:text-[#009c86]">
+            <div className="p-3 m-3 flex  justify-start items-center hover:cursor-pointer  hover:text-[#009c86]">
               <a
                 href="mailto:karande.vishal3102@gmail.com"
-                className="p-2 mr-2 hover:cursor-pointer"
+                className="w-full p-2 mr-2 hover:cursor-pointer flex justify-start items-center"
               >
-                <FiMail size={24} />
+                <FiMail size={24} className="mr-5" />
+                Karande.vishal3102@gmail.com
               </a>
-              <span>Karande.vishal3102@gmail.com</span>
             </div>
             <div className="p-3 m-3 flex justify-start items-center hover:cursor-pointer  hover:text-[#009c86]">
               <span className="p-2 mr-2 hover:cursor-pointer">
