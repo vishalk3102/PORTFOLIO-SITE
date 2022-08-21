@@ -17,19 +17,30 @@ This is my personal portfolio website developed by me.
 
 ## Installation and Usage
 
-Run Locally
 Clone the project
-   git clone https://github.com/vishalk3102/PORTFOLIO-SITE.git
-   
+
+```bash
+  git clone https://github.com/vishalk3102/PORTFOLIO-SITE.git
+```
+
 Go to the project directory
 
- Install dependencies
+Install dependencies
 
-   npm install
-   
+```bash
+  npm install
+```
+
 Start the server
 
+```bash
   npm start
+```
+Install all the peer dependencies
+
+```bash
+  npm install <library name> --legacy-peer-deps
+```
 
 
 
