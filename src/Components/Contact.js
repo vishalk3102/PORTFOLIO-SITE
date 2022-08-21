@@ -44,17 +44,17 @@ const Contact = () => {
           toast.success(
             "Thanks for sending the message,I will contact you soon ."
           );
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
         },
         (error) => {
           console.log(error.text);
           toast.error("Message not sent !!");
         }
       );
-    this.setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
   };
 
   return (
