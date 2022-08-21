@@ -39,7 +39,7 @@ const Slider = ({ items }) => {
           </div>
           <div className=" w-[100px] p-2 m-1 md:m-2 border-solid border-2 flex justify- items items-center border-[#009c86] rounded bg-[#009c86] hover:cursor-pointer hover:scale-105">
             <a
-              href={items.urlLink}
+              href={items.urlLive}
               target="_blank"
               rel="noreferrer"
               className="mr-1 p-1/2 w-full flex justify-around items-center"
