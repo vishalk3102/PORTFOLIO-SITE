@@ -19,16 +19,17 @@ This is my personal portfolio website developed by me.
 
 Run Locally
 Clone the project
-
-git clone https://github.com/vishalk3102/PORTFOLIO-SITE.git
+   git clone https://github.com/vishalk3102/PORTFOLIO-SITE.git
+   
 Go to the project directory
 
-Install dependencies
+ Install dependencies
 
-npm install
+   npm install
+   
 Start the server
 
-npm start
+  npm start
 
 
 
@@ -36,8 +37,8 @@ npm start
 
 The following technologies were used in the developement of the application
 
-### React
-### Tailwind
+  React
+  Tailwind
 
 ## License
 
