@@ -17,29 +17,38 @@ This is my personal portfolio website developed by me.
 
 ## Installation and Usage
 
-Run Locally
 Clone the project
 
-git clone https://github.com/vishalk3102/PORTFOLIO-SITE.git
+```bash
+  git clone https://github.com/vishalk3102/PORTFOLIO-SITE.git
+```
+
 Go to the project directory
 
 Install dependencies
 
-npm install
+```bash
+  npm install
+```
+
 Start the server
 
-npm start
+```bash
+  npm start
+```
 
-The following image demonstrates the application functionality:
+Install all the peer dependencies
 
-![Demo of PORTFOLIO-SITE!](https://drive.google.com/file/d/1qhqt05dne4mzHuwrvePbd6s_fesCfBno/view?usp=sharing)
+```bash
+  npm install <library name> --legacy-peer-deps
+```
 
 ## Technologies
 
 The following technologies were used in the developement of the application
 
-React
-Tailwind
+- React
+- Tailwind
 
 ## License
 
