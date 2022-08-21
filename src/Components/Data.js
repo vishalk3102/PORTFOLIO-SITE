@@ -17,6 +17,7 @@ import sliderImg2 from "../Assets/sliderImg2.jpeg";
 import sliderImg3 from "../Assets/sliderImg3.jpeg";
 import sliderImg4 from "../Assets/sliderImg4.png";
 
+// Data for nav header of about us page
 export const aboutNavData = [
   {
     id: 1,
@@ -29,6 +30,8 @@ export const aboutNavData = [
     handleFunction: "responsibilityHandleClick",
   },
 ];
+
+// Data for nav header(Education dropdown) of about us page
 export const educationData = [
   {
     id: 1,
@@ -47,6 +50,8 @@ export const educationData = [
     time: "april 2018 -june 2019",
   },
 ];
+
+// Data for nav header(position dropdown) of about us page
 export const ResponsibilityData = [
   {
     id: 1,
@@ -55,6 +60,8 @@ export const ResponsibilityData = [
     time: "april 2022 -present",
   },
 ];
+
+// Data for skill page
 export const skillData = [
   {
     id: 1,
@@ -106,6 +113,7 @@ export const skillData = [
   },
 ];
 
+// Data for project page sliders
 export const sliderData = [
   {
     id: 1,
@@ -145,6 +153,7 @@ export const sliderData = [
   },
 ];
 
+// Data for tech icon of slider in project page
 export const techIconData = [
   {
     id: 1,
