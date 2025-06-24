@@ -14,7 +14,7 @@ const About = () => {
   };
   return (
     <>
-      <div id="about" className="text-white w-full h-full mx-auto  mt-4 mb-10">
+      <div id="aout" className="text-white w-full h-full mx-auto  mt-4 mb-10">
         <Header index={1} title="About" />
         <div className="max-w-[1100px] w-full  flex flex-col justify-start items-center  mx-auto p-6">
           <p className="text-[#009c86] flex justify-center items-center  mx-auto italic text-xl  p-2 my-3 capitalize font-bold">

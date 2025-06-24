@@ -134,7 +134,7 @@ const Contact = () => {
                 <span className="Capitalize">Email</span>
                 <input
                   className="w-full md:w-[75%] bg-white-300 text-gray-900 mt-2 p-3 rounded"
-                  type="text"
+                  type="email"
                   placeholder=""
                   name="email"
                   value={formData.email}
